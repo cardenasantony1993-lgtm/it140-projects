@@ -9,17 +9,38 @@
 
 # TODO 1: Identify the information the movement process needs.
 # Consider the player's current room and movement command.
+# - current_room (string): The room the player is currently in.
+# - direction (string): The direction command entered by the player (e.g., 'go north', 'go south').
+# - rooms_dictionary (dictionary): The nested dictionary mapping rooms to their valid connections/exits.
 
 # TODO 2: Prompt for and receive the player's movement command.
+# The main game loop handles input gathering:
+# SET direction = INPUT("Enter your move (e.g., go north): ")
 
 # TODO 3: Validate whether the requested movement is possible from the
 # current room. Show the decision clearly.
-
+# Check if the requested direction is a valid connection from current_room
+    IF direction IN rooms_dictionary[current_room]:
+# Valid move identified
 # TODO 4: Describe what happens when the movement command is valid.
 # Include the room update and player output.
+# Update current room to the new destination
+        SET current_room = rooms_dictionary[current_room][direction]
+        
+        # Display confirmation output to the player
+        OUTPUT "You move " + direction + " to the " + current_room
 
 # TODO 5: Describe what happens when the movement command is invalid.
 # Include the output the player should receive.
+ELSE:
+        # Display error message when the direction is not a valid exit
+        OUTPUT "You cannot go that way!"
+    ENDIF
 
 # TODO 6: Show how movement fits into repeated gameplay.
 # The final game continues accepting commands until a required ending occurs.
+# The main game loop continues requesting movement and action commands 
+    # until the player reaches a terminal game state:
+    
+    # 1. Entering the Trap Room (Pit of Lions) -> GAME OVER
+    # 2. Entering the Villain Room (Altar of Olympus) -> WIN (if player has all 6 relics) or LOSE
