@@ -56,13 +56,13 @@ Zeus is the ruler of the Altar of Olympus and the main villain of the game. He u
 
 Before submitting, compare this storyboard with `game_map.drawio`.
 
-* [ ] I included eight (8) rooms.
-* [ ] I included six (6) collectable items.
-* [ ] The start room has no item.
-* [ ] The villain room has no item.
-* [ ] Every room except the start room and villain room contains one item.
-* [ ] Room, item, and villain names match my map.
-* [ ] The map allows the player to collect all required items before the
+* [x] I included eight (8) rooms.
+* [x] I included six (6) collectable items.
+* [x] The start room has no item.
+* [x] The villain room has no item.
+* [x] Every room except the start room and villain room contains one item.
+* [x] Room, item, and villain names match my map.
+* [x] The map allows the player to collect all required items before the
   villain is encountered.
 
 ## Project Two Handoff
