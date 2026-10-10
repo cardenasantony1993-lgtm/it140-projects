@@ -1,7 +1,5 @@
 # Project One Storyboard | Text-Based Adventure Game
 
-> Complete the `TODO:` prompts using your own game idea. This file is a graded
-> Project One deliverable and later becomes a reference for Project Two.
 
 ## Theme and Storyline
 
@@ -16,7 +14,6 @@ The game takes place on a mystical island ruled by ancient elemental forces. The
 
 ## Rooms
 
-Project One requires a minimum of eight rooms.
 
 1.  Ancestral Village (Start Room)
 2. Sacred River
@@ -26,17 +23,11 @@ Project One requires a minimum of eight rooms.
 6. Windy Peak
 7. Sun Sanctuary
 8. Altar of Olympus (Villain Room)  
+9. Pit of Lions (Trap Room – Instant Game Over)  
 
-
-9.  Pit of Lions (Trap Room)  
-
-
-Add more rooms if your design needs them.
+Pit of Lions is an additional trap room in my game. The player can enter this room from Temple of Fire by going east, Earth Cave by going south, or Sun Sanctuary by going west. If the player enters this room, the game ends immediately. This room has no item because it is designed as a trap. The player must avoid it and collect all six relics before facing Zeus.
 
 ## Items
-
-With the minimum eight-room design, Project One requires at least six items.
-Every room except the start room and villain room must contain one item.
 
 1. Ancestral Water Drop
 2. Eternal Torch
@@ -45,8 +36,6 @@ Every room except the start room and villain room must contain one item.
 5. Condor Feather
 6. Sun Crystal
 
-If you add rooms beyond the minimum, add an item for every additional room
-except the start room and villain room.
 
 ## Villain Zeus  
 
@@ -56,16 +45,20 @@ Zeus is the ruler of the Altar of Olympus and the main villain of the game. He u
 
 Before submitting, compare this storyboard with `game_map.drawio`.
 
-* [x] I included eight (8) rooms.
+* [x] I included nine (9) rooms.
 * [x] I included six (6) collectable items.
 * [x] The start room has no item.
 * [x] The villain room has no item.
-* [x] Every room except the start room and villain room contains one item.
+* [ ] Every room except the start room and villain room contains one item.
+* [x] Pit of Lions is an additional trap room with no item.
 * [x] Room, item, and villain names match my map.
 * [x] The map allows the player to collect all required items before the
   villain is encountered.
 
 ## Project Two Handoff
+
+Keep this file after Project One. In Module Seven, use these names and design
+choices when building the final room/item dictionary and player-facing output.
 
 Keep this file after Project One. In Module Seven, use these names and design
 choices when building the final room/item dictionary and player-facing output.
