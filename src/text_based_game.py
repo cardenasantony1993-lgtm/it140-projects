@@ -10,7 +10,6 @@ def show_instructions():
     print("Move commands: go north, go south, go east, go west")
     print("Collect items: get <item name>")
     print("Be careful! The Pit of Lions sends you back to the start.")
-    pass
 
 
 def show_status(current_room, inventory, rooms):
@@ -21,12 +20,14 @@ def show_status(current_room, inventory, rooms):
 
     if 'item' in rooms[current_room]:
         print("You see", rooms[current_room]['item'])
-    pass
 
 
 def main():
     """Run the main gameplay loop."""
-    # TODO: Create the full room/item dictionary from your Project One map.
+    rooms = {
+    'Great Hall': {'south': 'Bedroom'},
+    'Bedroom': {'north': 'Great Hall'}
+}
 
     # TODO: Set the player's starting room.
 
