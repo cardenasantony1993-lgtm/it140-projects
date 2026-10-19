@@ -1,19 +1,26 @@
 """Project Two starter for the student's text-based adventure game."""
 
-# TODO: Add the full-name comment required by Project Two directions.
+# Author: Abel Antonio Cardenas Jaimes
 
 
 def show_instructions():
     """Display the game objective and available commands."""
-    # TODO: Print instructions that match your game and commands.
+    print("Welcome to Mystical Elemental Island!")
+    print("Collect all 6 items before facing Zeus.")
+    print("Move commands: go north, go south, go east, go west")
+    print("Collect items: get <item name>")
+    print("Be careful! The Pit of Lions sends you back to the start.")
     pass
 
 
 def show_status(current_room, inventory, rooms):
     """Display the player's current game status."""
-    # TODO: Show the current room.
-    # TODO: Show the current inventory.
-    # TODO: Show the current-room item when one is available.
+    print("-------------------------")
+    print("You are in", current_room)
+    print("Inventory:", inventory)
+
+    if 'item' in rooms[current_room]:
+        print("You see", rooms[current_room]['item'])
     pass
 
 
